@@ -13,7 +13,11 @@ const getMinecraftJavaPrice = async url => {
         price,
         date: (new Date()).toString()
     }
-    console.log(`Minecraft Price is ${JSON.stringify(minecraft)}.`)
+    if (minecraft.price < 35) {
+      console.log(`Lower price than normal. Minecraft Price is ${JSON.stringify(minecraft)}.`)
+    } else {
+      console.log(`No discount. Minecraft Price is ${JSON.stringify(minecraft)}.`)
+    }
   } catch (error) {
     console.log(error);
   }
