@@ -24,3 +24,6 @@ const getMinecraftJavaPrice = async url => {
 };
 
 getMinecraftJavaPrice(url);
+
+// to run
+// node index.js
