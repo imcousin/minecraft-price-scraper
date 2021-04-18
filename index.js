@@ -14,6 +14,7 @@ const getMinecraftJavaPrice = async url => {
         date: (new Date()).toString()
     }
     if (minecraft.price < 35) {
+      // use twilio?
       console.log(`Lower price than normal. Minecraft Price is ${JSON.stringify(minecraft)}.`)
     } else {
       console.log(`No discount. Minecraft Price is ${JSON.stringify(minecraft)}.`)
@@ -23,6 +24,7 @@ const getMinecraftJavaPrice = async url => {
   }
 };
 
+// cronjob function to run
 getMinecraftJavaPrice(url);
 
 // to run
